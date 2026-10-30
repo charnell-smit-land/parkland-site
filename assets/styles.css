@@ -97,8 +97,16 @@ p { margin: 0; }
 .strip .wrap { display: flex; flex-wrap: wrap; gap: 12px 40px; align-items: center; justify-content: space-between; padding-top: 26px; padding-bottom: 26px; font-size: 15px; color: var(--ink-2); }
 .strip .label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 .strip .clients { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 18px; padding-top: 36px; padding-bottom: 36px; }
-.client-list { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 32px; font-family: var(--display); font-weight: 700; font-size: clamp(16px, 1.5vw, 19px); line-height: 1.3; letter-spacing: -0.01em; color: var(--ink); }
-@media (max-width: 900px) { .client-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; } }
+.marquee { width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.marquee-track { display: flex; width: max-content; animation: marquee 45s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.client-list { list-style: none; margin: 0; padding: 0 0 0 0; display: flex; flex-wrap: nowrap; gap: 48px; padding-right: 48px; font-family: var(--display); font-weight: 700; font-size: clamp(18px, 2vw, 22px); letter-spacing: -0.01em; color: var(--ink); white-space: nowrap; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; }
+  .client-list[aria-hidden="true"] { display: none; }
+}
 .strip .industries { font-size: 14px; color: var(--muted); }
 
 /* Cards */

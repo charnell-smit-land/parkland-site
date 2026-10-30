@@ -9,6 +9,9 @@ The website for Parkland Consulting Group. Plain HTML and CSS, no build step, ho
 | `/` | `index.html` |
 | `/services/` | `services/index.html` |
 | `/services/pattern-audit/` | `services/pattern-audit/index.html` |
+| `/services/growth-strategy/` | `services/growth-strategy/index.html` |
+| `/services/scale-strategy/` | `services/scale-strategy/index.html` |
+| `/services/communication-strategy/` | `services/communication-strategy/index.html` |
 | `/about/` | `about/index.html` |
 | `/book/` | `book/index.html` |
 

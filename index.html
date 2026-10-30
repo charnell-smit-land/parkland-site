@@ -33,8 +33,17 @@
 </a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 <nav class="nav" id="site-nav" aria-label="Main">
+<div class="nav-item has-sub">
 <a href="/services/">Services</a>
+<button class="sub-toggle" type="button" aria-expanded="false" aria-controls="subnav-services" aria-label="Show services"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="subnav" id="subnav-services">
+<a href="/services/">All Services</a>
 <a href="/services/pattern-audit/">Pattern Audit</a>
+<a href="/services/growth-strategy/">Growth Strategy</a>
+<a href="/services/scale-strategy/">Scale Strategy</a>
+<a href="/services/communication-strategy/">Communication Strategy</a>
+</div>
+</div>
 <a href="/about/">About</a>
 <a class="btn btn-dark" href="/book/">Book a Call</a>
 </nav>
@@ -159,9 +168,9 @@
 </div>
 <div class="grid">
 <article class="card"><p class="tag">Start here</p><h3 class="h3">Pattern Audit</h3><p>A focused review of your customer journey, operations and performance that shows what is repeating, what is working and what is quietly holding you back.</p><a class="text-link foot" href="/services/pattern-audit/">How the Audit Works</a></article>
-<article class="card"><p class="tag">Grow</p><h3 class="h3">Growth Strategy</h3><p>Websites, search and AI visibility, and paid media focused on the channels and audiences your patterns say will pay off.</p></article>
-<article class="card"><p class="tag">Scale</p><h3 class="h3">Scale Strategy</h3><p>The roadmap, systems and digital infrastructure to grow without breaking what already works, from ordering and loyalty to the tech stack behind them.</p></article>
-<article class="card"><p class="tag">Communicate</p><h3 class="h3">Communication Strategy</h3><p>Brand, messaging and customer journeys shaped by how your customers actually behave, so every touchpoint says the right thing at the right moment.</p></article>
+<article class="card"><p class="tag">Grow</p><h3 class="h3">Growth Strategy</h3><p>Websites, search and AI visibility, and paid media focused on the channels and audiences your patterns say will pay off.</p><a class="text-link foot" href="/services/growth-strategy/">Explore Growth</a></article>
+<article class="card"><p class="tag">Scale</p><h3 class="h3">Scale Strategy</h3><p>The roadmap, systems and digital infrastructure to grow without breaking what already works, from ordering and loyalty to the tech stack behind them.</p><a class="text-link foot" href="/services/scale-strategy/">Explore Scale</a></article>
+<article class="card"><p class="tag">Communicate</p><h3 class="h3">Communication Strategy</h3><p>Brand, messaging and customer journeys shaped by how your customers actually behave, so every touchpoint says the right thing at the right moment.</p><a class="text-link foot" href="/services/communication-strategy/">Explore Communication</a></article>
 </div>
 </section>
 
@@ -240,7 +249,10 @@
 </div>
 </footer>
 <script>
-(function(){var b=document.querySelector(".menu-toggle"),n=document.getElementById("site-nav");if(!b||!n)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");b.textContent=o?"Close":"Menu";});})();
+(function(){var b=document.querySelector(".menu-toggle"),n=document.getElementById("site-nav");if(b&&n){b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");b.textContent=o?"Close":"Menu";});}
+document.querySelectorAll(".sub-toggle").forEach(function(t){var item=t.closest(".has-sub");t.addEventListener("click",function(e){e.stopPropagation();var o=item.classList.toggle("sub-open");t.setAttribute("aria-expanded",o?"true":"false");});});
+document.addEventListener("click",function(e){document.querySelectorAll(".has-sub.sub-open").forEach(function(i){if(!i.contains(e.target)){i.classList.remove("sub-open");i.querySelector(".sub-toggle").setAttribute("aria-expanded","false");}});});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){document.querySelectorAll(".has-sub.sub-open").forEach(function(i){i.classList.remove("sub-open");var t=i.querySelector(".sub-toggle");t.setAttribute("aria-expanded","false");t.focus();});}});})();
 </script>
 </body>
 </html>

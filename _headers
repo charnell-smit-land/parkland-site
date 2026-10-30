@@ -2,6 +2,6 @@
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
 
-# Cache static assets
+# Always check for fresh styles and images after an update
 /assets/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=0, must-revalidate

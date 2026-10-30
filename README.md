@@ -36,3 +36,7 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.
+
+## After editing styles
+
+Pages load `assets/styles.css?v=...`. When `styles.css` changes, update the `v=` value on every page (the first 8 characters of `sha1sum assets/styles.css`) so browsers fetch the new file.

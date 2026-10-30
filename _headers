@@ -1,0 +1,7 @@
+# Keep the Cloudflare preview address out of Google; only parkland.consulting gets indexed
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Cache static assets
+/assets/*
+  Cache-Control: public, max-age=604800

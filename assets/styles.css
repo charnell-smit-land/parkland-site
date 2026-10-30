@@ -96,6 +96,9 @@ p { margin: 0; }
 .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .strip .wrap { display: flex; flex-wrap: wrap; gap: 12px 40px; align-items: center; justify-content: space-between; padding-top: 26px; padding-bottom: 26px; font-size: 15px; color: var(--ink-2); }
 .strip .label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.strip .clients { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 18px; padding-top: 36px; padding-bottom: 36px; }
+.client-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 32px; font-family: var(--display); font-weight: 700; font-size: clamp(17px, 1.7vw, 20px); letter-spacing: -0.01em; color: var(--ink); }
+.strip .industries { font-size: 14px; color: var(--muted); }
 
 /* Cards */
 .card { border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px; background: #fff; }

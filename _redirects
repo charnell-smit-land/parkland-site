@@ -1,0 +1,12 @@
+# Old WordPress URLs to new pages (Cloudflare Pages)
+/contact        /book/       301
+/contact/       /book/       301
+/services/websites-apps   /services/   301
+/services/websites-apps/  /services/   301
+/services/seo   /services/   301
+/services/seo/  /services/   301
+/blog           /            301
+/blog/*         /            301
+/feed/*         /            301
+/home           /            301
+/home/          /            301

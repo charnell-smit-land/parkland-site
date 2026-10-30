@@ -24,9 +24,10 @@
 <div class="wrap">
 <a class="brand" href="/" aria-label="Parkland Consulting Group home">
 <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="14" width="4" height="12" rx="1" fill="#121417"/><rect x="9" y="8" width="4" height="18" rx="1" fill="#121417"/><rect x="16" y="2" width="4" height="24" rx="1" fill="#C8F04B"/><rect x="23" y="11" width="4" height="15" rx="1" fill="#121417"/></svg>
-<span>Parkland Consulting Group</span>
+<span>Parkland<span class="brand-rest"> Consulting Group</span></span>
 </a>
-<nav class="nav" aria-label="Main">
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main">
 <a href="/services/">Services</a>
 <a href="/services/pattern-audit/">Pattern Audit</a>
 <a href="/about/">About</a>
@@ -81,5 +82,8 @@ Cal.ns.parkland("inline", { elementOrSelector: "#cal-inline", calLink: CAL_LINK,
 Cal.ns.parkland("ui", { theme: "light", cssVarsPerTheme: { light: { "cal-brand": "#121417" } }, hideEventTypeDetails: false, layout: "month_view" });
 </script>
 <noscript><p class="wrap" style="padding-bottom:40px"><a href="https://cal.com/charnell-at-parkland/30min">Book on Cal.com</a></p></noscript>
+<script>
+(function(){var b=document.querySelector(".menu-toggle"),n=document.getElementById("site-nav");if(!b||!n)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");b.textContent=o?"Close":"Menu";});})();
+</script>
 </body>
 </html>

@@ -23,9 +23,10 @@
 <div class="wrap">
 <a class="brand" href="/" aria-label="Parkland Consulting Group home">
 <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="14" width="4" height="12" rx="1" fill="#121417"/><rect x="9" y="8" width="4" height="18" rx="1" fill="#121417"/><rect x="16" y="2" width="4" height="24" rx="1" fill="#C8F04B"/><rect x="23" y="11" width="4" height="15" rx="1" fill="#121417"/></svg>
-<span>Parkland Consulting Group</span>
+<span>Parkland<span class="brand-rest"> Consulting Group</span></span>
 </a>
-<nav class="nav" aria-label="Main">
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main">
 <a href="/services/">Services</a>
 <a href="/services/pattern-audit/" aria-current="page">Pattern Audit</a>
 <a href="/about/">About</a>
@@ -58,7 +59,7 @@
 <section class="mist">
 <div class="wrap section stack-lg" style="gap:48px;padding-top:96px;padding-bottom:96px">
 <h2 class="h2 sm">What We Look At</h2>
-<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))">
 <div class="card plain"><h3 class="h3" style="font-size:22px">Customers</h3><p>How people find you, buy from you and come back, and where they drop off.</p><p class="mini-example"><span>For example</span>Most repeat customers make the same first purchase.</p></div>
 <div class="card plain"><h3 class="h3" style="font-size:22px">Operations</h3><p>The workflows, handoffs and recurring friction your teams deal with every day.</p><p class="mini-example"><span>For example</span>One handoff causes most of the complaints.</p></div>
 <div class="card plain"><h3 class="h3" style="font-size:22px">Performance</h3><p>The numbers you already track, read for trends instead of single moments.</p><p class="mini-example"><span>For example</span>Sales dip the same week every month.</p></div>
@@ -69,7 +70,7 @@
 
 <section class="wrap section stack-lg" style="gap:48px">
 <h2 class="h2 sm">How It Works</h2>
-<ol class="steps grid wide-gap" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+<ol class="steps grid wide-gap" style="grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))">
 <li class="step"><span class="num">01</span><h3 class="h3">Kickoff</h3><p>We align on your goals, the questions that matter most and what success looks like.</p></li>
 <li class="step"><span class="num">02</span><h3 class="h3">Discovery</h3><p>We review your data, tools and customer journey and talk with the people closest to the work.</p></li>
 <li class="step"><span class="num">03</span><h3 class="h3">Pattern Analysis</h3><p>We separate what keeps repeating from the noise and rank what deserves your attention.</p></li>
@@ -95,7 +96,7 @@
 
 <section class="wrap section tight-top stack-lg" style="gap:40px">
 <h2 class="h2 sm">Is This Right for You?</h2>
-<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))">
 <div class="fit"><h3 class="h3" style="font-size:22px">A Great Fit If You</h3><ul><li>Are growing and want to scale on purpose</li><li>Have data and tools but not a clear read on them</li><li>Keep running into the same problems</li><li>Want an outside view before a big investment</li></ul></div>
 <div class="fit"><h3 class="h3" style="font-size:22px">Probably Not the Right Fit If You</h3><ul><li>Need a single task done, like one ad or one page</li><li>Are still pre-launch with no customers yet</li><li>Are looking for a data science or analytics build</li></ul></div>
 </div>
@@ -122,5 +123,8 @@
 </nav>
 </div>
 </footer>
+<script>
+(function(){var b=document.querySelector(".menu-toggle"),n=document.getElementById("site-nav");if(!b||!n)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");b.textContent=o?"Close":"Menu";});})();
+</script>
 </body>
 </html>

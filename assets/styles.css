@@ -107,7 +107,7 @@ p { margin: 0; }
   .nav a { font-size: 17px; }
   .has-sub { flex-direction: column; align-items: stretch; gap: 0; }
   .sub-toggle { display: none; }
-  .nav-entry { display: none !important; }
+  .subnav a[href="/services/pattern-audit/"] { display: none; }
   .subnav, .has-sub:hover .subnav, .has-sub:focus-within .subnav { display: flex; position: static; min-width: 0; padding: 0 0 6px 16px; border: 0; border-radius: 0; box-shadow: none; background: none; }
   .nav .subnav a { padding: 0; font-size: 16px; color: var(--ink-2); }
   .nav .subnav a:hover { background: none; }

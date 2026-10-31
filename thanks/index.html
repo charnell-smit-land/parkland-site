@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank You | Parkland Consulting Group</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/styles.css?v=bcb3f388">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="/" aria-label="Parkland Consulting Group home">
+<svg class="brand-mark" width="44" height="24" viewBox="0 0 44 24" aria-hidden="true"><circle cx="10" cy="12" r="9" fill="#121417" fill-opacity="0.12"/><circle cx="22" cy="12" r="9" fill="#121417" fill-opacity="0.35"/><circle cx="34" cy="12" r="9" fill="#121417"/><circle cx="34" cy="12" r="3.6" fill="#C8F04B"/></svg>
+<span class="brand-word"><span class="brand-name">PARKLAND</span><span class="brand-sub" aria-hidden="true"><span>C</span><span>O</span><span>N</span><span>S</span><span>U</span><span>L</span><span>T</span><span>I</span><span>N</span><span>G</span><span>&nbsp;</span><span>G</span><span>R</span><span>O</span><span>U</span><span>P</span></span></span>
+</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main">
+<a class="nav-entry" href="/services/pattern-audit/">Pattern Audit</a>
+<div class="nav-item has-sub">
+<a href="/services/">Services</a>
+<button class="sub-toggle" type="button" aria-expanded="false" aria-controls="subnav-services" aria-label="Show services"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="subnav" id="subnav-services">
+<a href="/services/pattern-audit/">Pattern Audit</a>
+<a href="/services/growth-strategy/">Growth Strategy</a>
+<a href="/services/scale-strategy/">Scale Strategy</a>
+<a href="/services/communication-strategy/">Communication Strategy</a>
+</div>
+</div>
+<a href="/about/">About</a>
+<a class="btn btn-dark" href="/book/">Book a Call</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="wrap page-hero stack-lg" style="padding-bottom:64px">
+<p class="eyebrow">Payment Received</p>
+<h1 class="h1 sm">Thank You. Let's Find Your Patterns.</h1>
+<p class="lede">Your investment is confirmed and your receipt is on its way to your inbox. Here's what happens next.</p>
+</section>
+<section class="wrap section tight-top stack-lg" style="gap:48px;padding-bottom:96px">
+<div class="grid wide-gap">
+<div class="step"><h3 class="h3">1. Kickoff Email</h3><p>Within one business day, I'll send a short welcome note with a few kickoff questions and a simple list of what to share, like data access and recent reports.</p></div>
+<div class="step"><h3 class="h3">2. Kickoff Call</h3><p>We'll meet to align on your goals, confirm what we're looking at and set the dates for your readout.</p></div>
+<div class="step"><h3 class="h3">3. The Work Begins</h3><p>My team and I dig in, find the patterns and turn them into clear, practical moves you can act on.</p></div>
+</div>
+<p>Questions in the meantime? Email me anytime at <a href="mailto:charnell@parkland.consulting">charnell@parkland.consulting</a>.</p>
+<div class="btn-row">
+<a class="btn btn-dark" href="mailto:charnell@parkland.consulting">Email Charnell</a>
+<a class="btn btn-ghost" href="/">Back to the Homepage</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<span>© 2026 Parkland Consulting Group · Atlanta, GA</span>
+<nav aria-label="Footer">
+<a href="https://www.linkedin.com/company/parkland-consulting-group/">Parkland on LinkedIn</a>
+<a href="https://www.linkedin.com/in/charnell-smith-landry-611b3121">Charnell on LinkedIn</a>
+<a href="mailto:charnell@parkland.consulting">charnell@parkland.consulting</a>
+</nav>
+</div>
+</footer>
+<script>
+(function(){var b=document.querySelector(".menu-toggle"),n=document.getElementById("site-nav");if(b&&n){b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");b.textContent=o?"Close":"Menu";});}
+document.querySelectorAll(".sub-toggle").forEach(function(t){var item=t.closest(".has-sub");t.addEventListener("click",function(e){e.stopPropagation();var o=item.classList.toggle("sub-open");t.setAttribute("aria-expanded",o?"true":"false");});});
+document.addEventListener("click",function(e){document.querySelectorAll(".has-sub.sub-open").forEach(function(i){if(!i.contains(e.target)){i.classList.remove("sub-open");i.querySelector(".sub-toggle").setAttribute("aria-expanded","false");}});});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){document.querySelectorAll(".has-sub.sub-open").forEach(function(i){i.classList.remove("sub-open");var t=i.querySelector(".sub-toggle");t.setAttribute("aria-expanded","false");t.focus();});}});})();
+</script>
+</body>
+</html>

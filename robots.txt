@@ -1,4 +1,25 @@
+# Parkland Consulting Group welcomes search engines and AI assistants.
 User-agent: *
 Allow: /
+Disallow: /thanks/
+
+# Search and AI answer engines, named explicitly
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+Allow: /
+Disallow: /thanks/
 
 Sitemap: https://parkland.consulting/sitemap.xml

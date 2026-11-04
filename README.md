@@ -40,3 +40,9 @@ Then open http://localhost:8000.
 ## After editing styles
 
 Pages load `assets/styles.css?v=...`. When `styles.css` changes, update the `v=` value on every page (the first 8 characters of `sha1sum assets/styles.css`) so browsers fetch the new file.
+
+## Responsive check (run before every publish)
+
+Serve the site locally with `python3 -m http.server 8765`, then run `node checks/responsive.js`.
+It loads every page at 320, 360, 390, 430, 768, 1024, 1280, 1440 and 1920 pixels wide and fails if
+anything scrolls sideways or sticks out past the edge of the screen. Add new pages to the list in the script.

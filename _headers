@@ -5,3 +5,7 @@ https://:project.pages.dev/*
 # Always check for fresh styles and images after an update
 /assets/*
   Cache-Control: public, max-age=0, must-revalidate
+
+# Internal check script, not a page
+/checks/*
+  X-Robots-Tag: noindex

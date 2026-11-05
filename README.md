@@ -46,3 +46,9 @@ Pages load `assets/styles.css?v=...`. When `styles.css` changes, update the `v=`
 Serve the site locally with `python3 -m http.server 8765`, then run `node checks/responsive.js`.
 It loads every page at 320, 360, 390, 430, 768, 1024, 1280, 1440 and 1920 pixels wide and fails if
 anything scrolls sideways or sticks out past the edge of the screen. Add new pages to the list in the script.
+
+## Fonts
+
+Fonts are hosted with the site in `assets/fonts` (Latin subsets, WOFF), not loaded from Google:
+Bricolage Grotesque (headlines), IBM Plex Sans (body), IBM Plex Mono (labels) and Familjen Grotesk (logo).
+All are free under the SIL Open Font License; the license files sit next to the fonts.

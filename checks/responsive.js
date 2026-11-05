@@ -4,7 +4,7 @@
 // Fails if any page scrolls sideways or any element sticks out past the screen edge.
 const { chromium } = require('playwright');
 const pages = ['/', '/services/', '/services/pattern-audit/', '/services/growth-strategy/',
-  '/services/scale-strategy/', '/services/communication-strategy/', '/about/', '/book/', '/thanks/', '/404.html'];
+  '/services/scale-strategy/', '/services/communication-strategy/', '/about/', '/insights/', '/insights/what-should-a-small-business-fix-first/', '/insights/which-customers-are-worth-focusing-on/', '/insights/why-are-sales-flat-when-traffic-is-up/', '/book/', '/thanks/', '/404.html'];
 const widths = [320, 360, 390, 430, 768, 1024, 1280, 1440, 1920];
 (async () => {
   const browser = await chromium.launch();

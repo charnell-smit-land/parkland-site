@@ -18,6 +18,14 @@ Each engagement has a lead strategist and a bench of designers, full-stack devel
 - [Communication Strategy](https://parkland.consulting/services/communication-strategy/): How a brand speaks to customers, teams and partners across channels.
 - [All services and engagement options](https://parkland.consulting/services/): Project work from $7,500, advisory from $3,500 per month, fractional leadership from $6,500 per month.
 
+## Insights
+
+Short answers to common small business questions, each naming the pattern behind the problem and the move that fixes it.
+
+- [What Should a Small Business Fix First?](https://parkland.consulting/insights/what-should-a-small-business-fix-first/): Fix the problem that happens most often and that your customers can feel. Not the loudest problem, and not the newest one. A two-week tally of what keeps going wrong usually makes the answer obvious.
+- [How Do I Know Which Customers Are Worth Focusing On?](https://parkland.consulting/insights/which-customers-are-worth-focusing-on/): In most businesses, a small group of customers brings in a large share of the revenue and the repeat business. Find that group, learn what they have in common, like how they found you and what they bought first, and build more of your business around that path.
+- [Why Are My Sales Flat When My Traffic Is Up?](https://parkland.consulting/insights/why-are-sales-flat-when-traffic-is-up/): When traffic grows and sales don't, the problem is almost never getting people in the door. It's what happens after they arrive. Somewhere between the first click and the purchase, people are stopping at the same step, and finding that step is the fastest way to turn the traffic you already have into revenue.
+
 ## More
 
 - [About Charnell Smith-Landry](https://parkland.consulting/about/)

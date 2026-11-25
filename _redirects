@@ -10,3 +10,8 @@
 /feed/*         /            301
 /home           /            301
 /home/          /            301
+
+# Client Login: Stripe customer portal
+/clients        https://billing.stripe.com/p/login/cNi00idru6da5xH7KC9R600   302
+/clients/       https://billing.stripe.com/p/login/cNi00idru6da5xH7KC9R600   302
+/client-login   https://billing.stripe.com/p/login/cNi00idru6da5xH7KC9R600   302

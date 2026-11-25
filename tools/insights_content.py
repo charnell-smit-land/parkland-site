@@ -5,6 +5,39 @@
 
 ARTICLES = [
 {
+ "slug": "how-do-i-know-if-my-marketing-is-working",
+ "kit": {"type": "download", "title": "Marketing Scorecard", "text": "Track each channel for one month: what you put in, how many new customers named it and what they spent. The channels that earn their place stand out quickly.", "file": "/insights/kit/marketing-scorecard.csv", "label": "Download the Scorecard", "tip": "Count \"a friend told me\" as its own channel. Word of mouth is often doing more work than anything you pay for, and a simple thank-you to the people who refer you helps it grow."},
+ "tag": "Marketing",
+ "date": "2026-11-30",
+ "title": "How Do I Know If My Marketing Is Actually Working?",
+ "description": "Likes and clicks are attention, not results. Here is a simple way to see which marketing brings in paying customers and where your time should go.",
+ "answer": "Your marketing is working when it brings in paying customers, not just likes, clicks or compliments. The simplest test is to ask every new customer how they found you, write it down for a month, and compare what you put into each channel with the customers it actually brought in.",
+ "body": [
+  ("h2", "Busy Is Not the Same as Working"),
+  ("p", "Most owners judge marketing by how it feels. A post gets a lot of likes, an ad gets a lot of clicks, someone mentions they saw your flyer. That is attention, and attention is a good start. It only matters if some of those people become customers."),
+  ("p", "The numbers that are easiest to see, like followers, views and likes, sit furthest from a sale. The number that matters most, new paying customers, usually is not on any dashboard. You have to collect it yourself."),
+  ("figure", "channels", "An illustration: the channel getting the most attention is not always the one bringing in customers."),
+  ("h2", "One Question Tells You Most of What You Need"),
+  ("p", "Ask every new customer how they found you. Ask in person, add it to your booking or checkout form, or put it on your intake sheet. Write the answer down every time, even when it is \"a friend told me.\" After a month you will have a plain, honest count of where your customers come from."),
+  ("p", "Then put that count next to what each channel takes from you, in money and in hours. A channel that eats five hours a week and brings in one customer a month is telling you something. So is the one you barely touch that keeps sending people through the door."),
+  ("example", "Picture a neighborhood bakery that posts on social media every day and runs a small ad in a local magazine. The posts get plenty of likes, so they feel like the winner. After a month of asking, most new regulars mention the magazine or a friend, and very few mention the posts. The bakery keeps posting, spends less time on it, and puts that time into the ad and a simple referral card."),
+  ("h2", "The Move"),
+  ("steps", [
+    ("Ask Every New Customer", "Add one question, how did you find us, to your checkout, booking form or first conversation. Record every answer for a full month."),
+    ("Line Up Each Channel", "For each channel, write down what you put in, both money and hours, and how many new customers named it. The Marketing Scorecard below keeps it to one page."),
+    ("Move Time Toward What Works", "Shift some time or money from the channel with the weakest return to the one with the strongest. Change one thing at a time, then check again next month."),
+  ]),
+ ],
+ "check": [
+  "Do you know how your last 10 new customers found you?",
+  "Could you say which marketing effort takes the most of your time each week?",
+  "Have you changed or stopped a marketing effort because of what it brought in, not how it felt?",
+ ],
+ "check_note": "If any answer was no, one month of asking a single question will tell you more than any follower count.",
+ "pattern": "The channel getting the most attention is not always the one bringing in paying customers.",
+ "move": "Ask every new customer how they found you, compare that to what each channel takes, and move your time toward what works.",
+},
+{
  "slug": "what-should-a-small-business-fix-first",
  "kit": {"type": "download", "title": "Two-Week Problem Tally", "text": "A ready-made sheet for your two-week tally. Log each problem, mark whether a customer felt it, and the Fix First answer sorts itself.", "file": "/insights/kit/two-week-problem-tally.csv", "label": "Download the Tally Sheet", "tip": "Ask your team to add to the sheet too. The problems you never hear about are often the ones customers feel most."},
  "tag": "Operations",

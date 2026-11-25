@@ -57,6 +57,24 @@ FIGURES = {
 <text x="238" y="428" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#5A6068">CUSTOMERS FEEL IT →</text>
 <text x="0" y="0" transform="translate(18 194) rotate(-90)" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#5A6068">HAPPENS OFTEN →</text>
 </svg>''',
+"channels": '''<svg viewBox="0 0 440 330" role="img" aria-labelledby="fig-t" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-t">Illustration: channel A gets a lot of attention but brings few customers, channel B gets less attention but brings more customers</title>
+<text x="0" y="22" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="24" fill="#121417">Channel A</text>
+<text x="0" y="54" font-family="IBM Plex Mono, monospace" font-size="14" fill="#5A6068">ATTENTION</text>
+<rect x="0" y="62" width="420" height="30" rx="8" fill="#121417"/>
+<text x="0" y="116" font-family="IBM Plex Mono, monospace" font-size="14" fill="#5A6068">CUSTOMERS</text>
+<rect x="0" y="124" width="440" height="30" rx="8" fill="#F2F4F4"/>
+<rect x="0" y="124" width="64" height="30" rx="8" fill="#0B5D5B"/>
+<text x="0" y="196" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="24" fill="#121417">Channel B</text>
+<text x="0" y="228" font-family="IBM Plex Mono, monospace" font-size="14" fill="#5A6068">ATTENTION</text>
+<rect x="0" y="236" width="440" height="30" rx="8" fill="#F2F4F4"/>
+<rect x="0" y="236" width="150" height="30" rx="8" fill="#121417"/>
+<text x="0" y="290" font-family="IBM Plex Mono, monospace" font-size="14" fill="#5A6068">CUSTOMERS</text>
+<rect x="0" y="298" width="440" height="30" rx="8" fill="#F2F4F4"/>
+<rect x="0" y="298" width="300" height="30" rx="8" fill="#C8F04B"/>
+<text x="14" y="319" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="16" fill="#121417">The one that works</text>
+<text x="440" y="22" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="14" fill="#5A6068">ILLUSTRATION</text>
+</svg>''',
 }
 
 def esc(s):

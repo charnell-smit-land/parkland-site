@@ -9,3 +9,5 @@ https://:project.pages.dev/*
 # Internal check script, not a page
 /checks/*
   X-Robots-Tag: noindex
+/tools/*
+  X-Robots-Tag: noindex

@@ -52,3 +52,10 @@ anything scrolls sideways or sticks out past the edge of the screen. Add new pag
 Fonts are hosted with the site in `assets/fonts` (Latin subsets, WOFF), not loaded from Google:
 Bricolage Grotesque (headlines), IBM Plex Sans (body), IBM Plex Mono (labels) and Familjen Grotesk (logo).
 All are free under the SIL Open Font License; the license files sit next to the fonts.
+
+## Insights (articles)
+
+Articles live in `tools/insights_content.py`. Add a new entry at the top of the list, then run
+`python3 tools/build_insights.py`. It builds `/insights/`, each article page, the RSS feed and the sitemap entries.
+Each article follows the same shape: the short answer, a graphic, an example, The Move (three steps),
+a Pattern Check and a Pattern Card. Add new article URLs to `checks/responsive.js`.

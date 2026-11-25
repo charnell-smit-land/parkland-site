@@ -5,8 +5,8 @@
 /services/websites-apps/  /services/growth-strategy/   301
 /services/seo   /services/growth-strategy/   301
 /services/seo/  /services/growth-strategy/   301
-/blog           /            301
-/blog/*         /            301
+/blog           /insights/   301
+/blog/*         /insights/   301
 /feed/*         /            301
 /home           /            301
 /home/          /            301

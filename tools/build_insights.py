@@ -157,7 +157,7 @@ if(A>0){msg+=", worth about $"+Math.round(extra*A).toLocaleString("en-US")+" a m
 def build():
     header, footer, css = page_shell()
     org = {"@type": "Organization", "name": "Parkland Consulting Group", "url": SITE + "/", "logo": SITE + "/assets/logo.png"}
-    author = {"@type": "Person", "@id": SITE + "/about/#charnell", "name": "Charnell Smith-Landry", "url": SITE + "/about/"}
+    author = {"@type": "Organization", "name": "Parkland Consulting Group", "url": SITE + "/"}
     for a in ARTICLES:
         url = f"{SITE}/insights/{a['slug']}/"
         mins = max(3, round(words(a) / 220))
@@ -173,9 +173,9 @@ def build():
 <article class="wrap article">
 <header class="art-head">
 <a class="text-link" href="/insights/" style="align-self:flex-start;font-size:15px">All Insights</a>
-<p class="eyebrow">Insights · {esc(a["tag"])}</p>
+<p class="eyebrow">Insights · The Parkland Blog · {esc(a["tag"])}</p>
 <h1 class="h1 sm">{esc(a["title"])}</h1>
-<p class="art-meta">By <a href="/about/">Charnell Smith-Landry</a>, Founder · <time datetime="{a["date"]}">{fmt_date(a["date"])}</time> · {mins} min read</p>
+<p class="art-meta">Parkland Consulting Group · <time datetime="{a["date"]}">{fmt_date(a["date"])}</time> · {mins} min read</p>
 </header>
 <div class="answer"><span>The short answer</span><p>{esc(a["answer"])}</p></div>
 <div class="art-body">
@@ -217,17 +217,17 @@ def build():
 <a class="text-link" href="/insights/{a["slug"]}/" aria-hidden="true" tabindex="-1">Read the Insight</a>
 </article>''' for a in ARTICLES)
     url = SITE + "/insights/"
-    schema = [{"@context": "https://schema.org", "@type": "Blog", "name": "Parkland Insights", "url": url,
+    schema = [{"@context": "https://schema.org", "@type": "Blog", "name": "Parkland Insights: The Parkland Blog", "url": url,
                "description": "Short, practical answers to the questions small business owners ask, built on the patterns behind growth.",
                "publisher": org,
                "blogPost": [{"@type": "BlogPosting", "headline": a["title"], "url": f"{SITE}/insights/{a['slug']}/", "datePublished": a["date"]} for a in ARTICLES]}]
-    page = head("Insights | Parkland Consulting Group",
+    page = head("Insights: The Parkland Blog | Parkland Consulting Group",
                 "Short, practical answers to the questions small business owners ask, built on the patterns behind growth.",
                 url, css, "website", schema) + header + f'''<main id="main">
 <section class="wrap page-hero stack-lg" style="padding-bottom:48px">
-<p class="eyebrow">Insights</p>
+<p class="eyebrow">Insights · The Parkland Blog</p>
 <h1 class="h1 sm">Patterns Worth Knowing.</h1>
-<p class="lede">Short, practical answers to the questions business owners ask most. Each one names the pattern behind the problem and the move that fixes it, and comes with a free Pattern Kit: a tool, template or tip you can use today.</p>
+<p class="lede">Our blog, with a new post every Monday. Short, practical answers to the questions business owners ask most. Each one names the pattern behind the problem and the move that fixes it, and comes with a free Pattern Kit: a tool, template or tip you can use today.</p>
 <div class="ins-format"><span><b>The question</b> you're asking</span><span><b>The pattern</b> behind it</span><span><b>The move</b> to make</span><span><b>A free tool</b> to use today</span></div>
 </section>
 <section class="wrap section tight-top">
@@ -251,7 +251,7 @@ def build():
     # RSS feed
     items = "".join(f'''<item><title>{esc(a["title"])}</title><link>{SITE}/insights/{a["slug"]}/</link><guid>{SITE}/insights/{a["slug"]}/</guid><pubDate>{datetime.datetime.fromisoformat(a["date"]).strftime("%a, %d %b %Y 12:00:00 +0000")}</pubDate><description>{esc(a["answer"])}</description></item>''' for a in ARTICLES)
     open(os.path.join(ROOT, "insights", "feed.xml"), "w").write(f'''<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>Parkland Insights</title><link>{SITE}/insights/</link><description>Patterns worth knowing for small and growing businesses.</description><language>en-us</language>{items}</channel></rss>
+<rss version="2.0"><channel><title>Parkland Insights: The Parkland Blog</title><link>{SITE}/insights/</link><description>Patterns worth knowing for small and growing businesses.</description><language>en-us</language>{items}</channel></rss>
 ''')
 
     # Sitemap

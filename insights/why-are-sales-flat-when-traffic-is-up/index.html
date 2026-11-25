@@ -17,7 +17,7 @@
 <link rel="alternate" type="application/rss+xml" title="Parkland Insights" href="/insights/feed.xml">
 <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/assets/fonts/ibm-plex-sans.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="/assets/styles.css?v=522e8858">
+<link rel="stylesheet" href="/assets/styles.css?v=1c008ddc">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why Are My Sales Flat When My Traffic Is Up?", "description": "When traffic grows and sales do not, the leak is almost always after people arrive. Here is how to find the step where they stop.", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "mainEntityOfPage": "https://parkland.consulting/insights/why-are-sales-flat-when-traffic-is-up/", "author": {"@type": "Person", "@id": "https://parkland.consulting/about/#charnell", "name": "Charnell Smith-Landry", "url": "https://parkland.consulting/about/"}, "publisher": {"@type": "Organization", "name": "Parkland Consulting Group", "url": "https://parkland.consulting/", "logo": "https://parkland.consulting/assets/logo.png"}, "image": "https://parkland.consulting/assets/logo.png", "articleSection": "Growth"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why Are My Sales Flat When My Traffic Is Up?", "acceptedAnswer": {"@type": "Answer", "text": "When traffic grows and sales don't, the problem is almost never getting people in the door. It's what happens after they arrive. Somewhere between the first click and the purchase, people are stopping at the same step, and finding that step is the fastest way to turn the traffic you already have into revenue."}}]}</script>
 </head>
 <body>
@@ -73,10 +73,28 @@
 <text x="12" y="284" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5A6068">TIME →</text>
 </svg><figcaption>When traffic climbs and sales stay flat, the space between the lines is the leak.</figcaption></figure>
 <p>The leak usually comes from one of three places. The new visitors are not your buyers, because a channel is bringing browsers instead of customers. The page they land on never clearly asks for the sale or the booking. Or one step adds just enough friction, like a long form, a surprise fee or a hard-to-find button, that people give up.</p>
-<div class="example"><span>For example</span>A tutoring center doubled its website visits with social media posts, but enrollments stayed the same. The posts sent parents to the homepage, and the enrollment form was three clicks deep. Linking posts straight to a short sign-up page turned the same traffic into new students.</div>
+<div class="example"><span>For example</span>Picture a tutoring center that doubles its website visits with social media posts while enrollments stay the same. The posts send parents to the homepage, and the enrollment form is three clicks deep. Linking posts straight to a short sign-up page turns the same traffic into new students.</div>
 <h2 class="h3">The Move</h2>
 <ol class="art-steps"><li><strong>Walk the Path on Your Phone</strong><span>Start where a new customer starts, like a post, an ad or a search, and try to buy or book. Write down every moment you hesitate. Your customers hesitate there too.</span></li><li><strong>Compare Sources by Buyers, Not Visitors</strong><span>Check which channels bring people who actually buy. A source with half the traffic and twice the sales deserves more of your investment.</span></li><li><strong>Fix the One Step Where Most People Stop</strong><span>Choose the biggest drop-off and fix only that. Give it two weeks before you judge the result, so the change has time to show up.</span></li></ol>
 </div>
+<aside class="kit" aria-label="Pattern Kit">
+<div class="kit-head"><p class="eyebrow">Pattern Kit · Free in Every Insight</p><h2 class="h3">Leak Calculator</h2><p>Enter last month&#x27;s visitors and sales to see your conversion rate, and what fixing one step could be worth.</p></div>
+<form class="leak" onsubmit="return false">
+<label for="lk-v">Visitors last month<input id="lk-v" type="number" min="1" inputmode="numeric" placeholder="2,000"></label>
+<label for="lk-s">Sales or bookings last month<input id="lk-s" type="number" min="0" inputmode="numeric" placeholder="30"></label>
+<label for="lk-a">Average sale, optional<input id="lk-a" type="number" min="0" inputmode="decimal" placeholder="$85"></label>
+</form>
+<p class="leak-out" id="lk-out" aria-live="polite">Enter your numbers to see your conversion rate.</p>
+<script>
+(function(){var v=document.getElementById("lk-v"),s=document.getElementById("lk-s"),a=document.getElementById("lk-a"),o=document.getElementById("lk-out");
+function f(n){return n.toLocaleString("en-US",{maximumFractionDigits:1})}
+function run(){var V=+v.value,S=+s.value,A=+a.value;if(!V||V<1||s.value===""){o.textContent="Enter your numbers to see your conversion rate.";return}
+var r=S/V*100,extra=V*0.01,msg="Your conversion rate is "+f(r)+"%. About "+f(S/V*100)+" of every 100 visitors buy or book. If one fix helped just 1 more visitor in every 100, that would be about "+f(extra)+" more sales a month";
+if(A>0){msg+=", worth about $"+Math.round(extra*A).toLocaleString("en-US")+" a month"}o.textContent=msg+".";}
+[v,s,a].forEach(function(e){e.addEventListener("input",run)});})();
+</script>
+<p class="kit-tip"><span>Quick tip</span>Use the same date range for both numbers, and count bookings or sign-ups as sales if that is how your business earns.</p>
+</aside>
 <aside class="pattern-check" aria-label="Pattern Check">
 <p class="eyebrow">Pattern Check</p>
 <ul><li>Has your traffic grown over the last few months while sales stayed about the same?</li><li>Do you know which channel brings your buyers, not just your visitors?</li><li>Can a first-time visitor buy or book from their phone in three taps or fewer?</li></ul>

@@ -6,6 +6,7 @@
 ARTICLES = [
 {
  "slug": "what-should-a-small-business-fix-first",
+ "kit": {"type": "download", "title": "Two-Week Problem Tally", "text": "A ready-made sheet for your two-week tally. Log each problem, mark whether a customer felt it, and the Fix First answer sorts itself.", "file": "/insights/kit/two-week-problem-tally.csv", "label": "Download the Tally Sheet", "tip": "Ask your team to add to the sheet too. The problems you never hear about are often the ones customers feel most."},
  "tag": "Operations",
  "date": "2026-11-04",
  "title": "What Should a Small Business Fix First?",
@@ -19,7 +20,7 @@ ARTICLES = [
   ("p", "Ask two things about every problem on your list. How often does it happen? And how close is it to the customer? Put the answers on a simple grid and your priorities sort themselves."),
   ("figure", "grid", "The Fix First grid. Problems that happen often and that customers feel go to the top of the list."),
   ("p", "Problems in the top right are your Fix First list. Frequent but internal problems get scheduled. Rare problems customers feel get watched. Rare internal problems can usually be let go for now."),
-  ("example", "A gift boutique was set on redesigning its website. A two-week tally showed the real repeat problem was online orders shipping a day late, which showed up in reviews and support emails every week. Fixing the packing routine did more for sales than the redesign would have."),
+  ("example", "Picture a gift boutique set on redesigning its website. A two-week tally shows the real repeat problem is online orders shipping a day late, which keeps showing up in reviews and support emails. Fixing the packing routine would do more for sales than the redesign."),
   ("h2", "The Move"),
   ("steps", [
     ("Keep a Two-Week Tally", "Every time something goes wrong, write one line: what happened and who noticed. Ask your team to add to it. Two weeks is enough to see what repeats."),
@@ -38,6 +39,7 @@ ARTICLES = [
 },
 {
  "slug": "which-customers-are-worth-focusing-on",
+ "kit": {"type": "download", "title": "Customer Sort Template", "text": "Paste in your customer export, sort by spend, visits and most recent visit, and mark the people who rank high on all three.", "file": "/insights/kit/customer-sort-template.csv", "label": "Download the Template", "tip": "Add a column for how each customer first found you. It is usually the fastest way to see the path your best customers share."},
  "tag": "Customers",
  "date": "2026-11-04",
  "title": "How Do I Know Which Customers Are Worth Focusing On?",
@@ -50,7 +52,7 @@ ARTICLES = [
   ("figure", "customers", "An illustration of a common pattern: one small group of customers drives most of the repeat business."),
   ("h2", "How to Find Them Without Fancy Tools"),
   ("p", "Export your customer list from whatever you already use, whether that is a booking system, a point of sale, an online store or even invoices. Then sort it three ways: who spent the most, who came back most often and who bought most recently. The names that show up near the top of all three are your core group."),
-  ("example", "A hair salon sorted a year of bookings and found that its most loyal clients almost all started with the same service, a consultation and trim. New clients who started with a single color appointment rarely returned. The salon began promoting the consultation first, and repeat bookings grew."),
+  ("example", "Picture a hair salon that sorts a year of bookings and finds its most loyal clients almost all started with the same service, a consultation and trim, while clients who started with a single color appointment rarely return. Promoting the consultation first sends more new clients down the path its best clients took."),
   ("h2", "The Move"),
   ("steps", [
     ("Sort Your Customer List", "Rank customers by total spend, number of visits and most recent visit. Mark the people who rank high on all three."),
@@ -69,6 +71,7 @@ ARTICLES = [
 },
 {
  "slug": "why-are-sales-flat-when-traffic-is-up",
+ "kit": {"type": "leak", "title": "Leak Calculator", "text": "Enter last month's visitors and sales to see your conversion rate, and what fixing one step could be worth.", "tip": "Use the same date range for both numbers, and count bookings or sign-ups as sales if that is how your business earns."},
  "tag": "Growth",
  "date": "2026-11-04",
  "title": "Why Are My Sales Flat When My Traffic Is Up?",
@@ -79,7 +82,7 @@ ARTICLES = [
   ("p", "More visitors feels like progress, so it is natural to keep investing in getting more of them. But if sales stay flat, more traffic just means more people leaving at the same spot. The gap between the two lines is where your growth is hiding."),
   ("figure", "leak", "When traffic climbs and sales stay flat, the space between the lines is the leak."),
   ("p", "The leak usually comes from one of three places. The new visitors are not your buyers, because a channel is bringing browsers instead of customers. The page they land on never clearly asks for the sale or the booking. Or one step adds just enough friction, like a long form, a surprise fee or a hard-to-find button, that people give up."),
-  ("example", "A tutoring center doubled its website visits with social media posts, but enrollments stayed the same. The posts sent parents to the homepage, and the enrollment form was three clicks deep. Linking posts straight to a short sign-up page turned the same traffic into new students."),
+  ("example", "Picture a tutoring center that doubles its website visits with social media posts while enrollments stay the same. The posts send parents to the homepage, and the enrollment form is three clicks deep. Linking posts straight to a short sign-up page turns the same traffic into new students."),
   ("h2", "The Move"),
   ("steps", [
     ("Walk the Path on Your Phone", "Start where a new customer starts, like a post, an ad or a search, and try to buy or book. Write down every moment you hesitate. Your customers hesitate there too."),

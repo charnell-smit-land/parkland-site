@@ -127,6 +127,33 @@ def body_html(a):
             out.append(f'<ol class="art-steps">{items}</ol>')
     return "\n".join(out)
 
+def kit_html(a):
+    k = a.get("kit")
+    if not k:
+        return ""
+    if k["type"] == "download":
+        action = f'<a class="btn btn-dark" href="{k["file"]}" download>{esc(k["label"])}</a><p class="kit-small">Opens in Excel, Numbers or Google Sheets.</p>'
+    else:
+        action = '''<form class="leak" onsubmit="return false">
+<label for="lk-v">Visitors last month<input id="lk-v" type="number" min="1" inputmode="numeric" placeholder="2,000"></label>
+<label for="lk-s">Sales or bookings last month<input id="lk-s" type="number" min="0" inputmode="numeric" placeholder="30"></label>
+<label for="lk-a">Average sale, optional<input id="lk-a" type="number" min="0" inputmode="decimal" placeholder="$85"></label>
+</form>
+<p class="leak-out" id="lk-out" aria-live="polite">Enter your numbers to see your conversion rate.</p>
+<script>
+(function(){var v=document.getElementById("lk-v"),s=document.getElementById("lk-s"),a=document.getElementById("lk-a"),o=document.getElementById("lk-out");
+function f(n){return n.toLocaleString("en-US",{maximumFractionDigits:1})}
+function run(){var V=+v.value,S=+s.value,A=+a.value;if(!V||V<1||s.value===""){o.textContent="Enter your numbers to see your conversion rate.";return}
+var r=S/V*100,extra=V*0.01,msg="Your conversion rate is "+f(r)+"%. About "+f(S/V*100)+" of every 100 visitors buy or book. If one fix helped just 1 more visitor in every 100, that would be about "+f(extra)+" more sales a month";
+if(A>0){msg+=", worth about $"+Math.round(extra*A).toLocaleString("en-US")+" a month"}o.textContent=msg+".";}
+[v,s,a].forEach(function(e){e.addEventListener("input",run)});})();
+</script>'''
+    return f'''<aside class="kit" aria-label="Pattern Kit">
+<div class="kit-head"><p class="eyebrow">Pattern Kit · Free in Every Insight</p><h2 class="h3">{esc(k["title"])}</h2><p>{esc(k["text"])}</p></div>
+{action}
+<p class="kit-tip"><span>Quick tip</span>{esc(k["tip"])}</p>
+</aside>'''
+
 def build():
     header, footer, css = page_shell()
     org = {"@type": "Organization", "name": "Parkland Consulting Group", "url": SITE + "/", "logo": SITE + "/assets/logo.png"}
@@ -154,6 +181,7 @@ def build():
 <div class="art-body">
 {body_html(a)}
 </div>
+{kit_html(a)}
 <aside class="pattern-check" aria-label="Pattern Check">
 <p class="eyebrow">Pattern Check</p>
 <ul>{checks}</ul>
@@ -199,8 +227,8 @@ def build():
 <section class="wrap page-hero stack-lg" style="padding-bottom:48px">
 <p class="eyebrow">Insights</p>
 <h1 class="h1 sm">Patterns Worth Knowing.</h1>
-<p class="lede">Short, practical answers to the questions business owners ask most. Each one names the pattern behind the problem and the move that fixes it.</p>
-<div class="ins-format"><span><b>The question</b> you're asking</span><span><b>The pattern</b> behind it</span><span><b>The move</b> to make</span></div>
+<p class="lede">Short, practical answers to the questions business owners ask most. Each one names the pattern behind the problem and the move that fixes it, and comes with a free Pattern Kit: a tool, template or tip you can use today.</p>
+<div class="ins-format"><span><b>The question</b> you're asking</span><span><b>The pattern</b> behind it</span><span><b>The move</b> to make</span><span><b>A free tool</b> to use today</span></div>
 </section>
 <section class="wrap section tight-top">
 <div class="ins-list">
